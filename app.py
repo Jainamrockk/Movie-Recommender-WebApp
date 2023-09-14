@@ -26,7 +26,7 @@ def recommend(movie):
     recommended_movies_poster.append(fetch_poster(movie_id))
   return recommended_movies,recommended_movies_poster
 
-movies_dict = pickle.load(open(r'C:\Users\Jainam\PycharmProjects\Movie-recommender\venv\movie_dict.pkl ', 'rb'))
+movies_dict = pickle.load(open(r'movie_dict.pkl', 'rb'))
 movies = pd.DataFrame(movies_dict)
 st.title('Movie Recommender System')
 selected_movie_name = st.selectbox(
